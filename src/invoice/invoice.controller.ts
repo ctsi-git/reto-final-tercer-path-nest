@@ -30,7 +30,7 @@ export class InvoiceController {
   @Post()
   @UseGuards(AuthGuard)
   //@UsePipes(new ValidationPipe())
-  create(@Body() newInvoice: CreateInvoiceDto) {
+  async create(@Body() newInvoice: CreateInvoiceDto) {
     return this.invoiceService.create(newInvoice);
   }
 

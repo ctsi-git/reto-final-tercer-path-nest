@@ -1,1 +1,396 @@
-{"info":{"name":"RetoFinalPath3NestJS","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json","description":""},"item":[{"name":"Listado  Clientes","request":{"method":"GET","url":{"raw":"http://localhost:3000/customer/","protocol":"http","host":["localhost:3000"],"path":["customer"],"port":"3000"}}},{"name":"Buscar Cliente por ID","request":{"method":"GET","url":{"raw":"http://localhost:3000/customer/a3d90f0b-5539-4065-9e32-0c07390c7e88","protocol":"http","host":["localhost:3000"],"path":["customer","a3d90f0b-5539-4065-9e32-0c07390c7e88"],"port":"3000"}}},{"name":"Crear Cliente","request":{"method":"POST","url":{"raw":"http://localhost:3000/customer","protocol":"http","host":["localhost:3000"],"path":["customer"],"port":"3000"},"body":{"mode":"raw","options":{"raw":{"language":"json"}},"raw":"{\n  \"nombre\" : \"Juan\",\n  \"apellido\" : \"Alegre\",\n  \"telefono\" : \"123456789\",\n  \"email\" : \"juanal@mail.com\"\n}"},"auth":{"type":"bearer","bearer":[{"key":"token","value":"99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec","type":"string"}]}}},{"name":"Update Cliente","request":{"method":"PUT","url":{"raw":"http://localhost:3000/customer/a3d90f0b-5539-4065-9e32-0c07390c7e88","protocol":"http","host":["localhost:3000"],"path":["customer","a3d90f0b-5539-4065-9e32-0c07390c7e88"],"port":"3000"},"body":{"mode":"raw","options":{"raw":{"language":"json"}},"raw":"{\n  \"nombre\" : \"Maria\",\n  \"apellido\" : \"Almeida\",\n  \"telefono\" : \"456789123\",\n  \"email\" : \"maral@mail.com\"\n}"},"auth":{"type":"bearer","bearer":[{"key":"token","value":"99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec","type":"string"}]}}},{"name":"Modificar Cliente","request":{"method":"PATCH","url":{"raw":"http://localhost:3000/customer/a3d90f0b-5539-4065-9e32-0c07390c7e88","protocol":"http","host":["localhost:3000"],"path":["customer","a3d90f0b-5539-4065-9e32-0c07390c7e88"],"port":"3000"},"body":{"mode":"raw","options":{"raw":{"language":"json"}},"raw":"{\n  \"nombre\" : \"Maria\",\n  \"apellido\" : \"Almeida\",\n  \"telefono\" : \"456789123\",\n  \"email\" : \"maral@mail.com\"\n}"},"auth":{"type":"bearer","bearer":[{"key":"token","value":"99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec","type":"string"}]}}},{"name":"Borrar Cliente","request":{"method":"DELETE","url":{"raw":"http://localhost:3000/invoice/a3d90f0b-5539-4065-9e32-0c07390c7e88","protocol":"http","host":["localhost:3000"],"path":["invoice","a3d90f0b-5539-4065-9e32-0c07390c7e88"],"port":"3000"},"auth":{"type":"bearer","bearer":[{"key":"token","value":"99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec","type":"string"}]}}},{"name":"Listado Facturas","request":{"method":"GET","url":{"raw":"http://localhost:3000/invoice/","protocol":"http","host":["localhost:3000"],"path":["invoice"],"port":"3000"}}},{"name":"Buscar Factura por ID","request":{"method":"GET","url":{"raw":"http://localhost:3000/invoice/2772dd5b-5f85-4ce2-bc87-9af28f70cf25","protocol":"http","host":["localhost:3000"],"path":["invoice","2772dd5b-5f85-4ce2-bc87-9af28f70cf25"],"port":"3000"}}},{"name":"Crear Factura","request":{"method":"POST","url":{"raw":"http://localhost:3000/invoice","protocol":"http","host":["localhost:3000"],"path":["invoice"],"port":"3000"},"body":{"mode":"raw","options":{"raw":{"language":"json"}},"raw":"{\n  \"customerId\": \"633a7e3f-eea5-4ba3-b07c-456b5362c9d8\",\n  \"detail\": [\n    {\n      \"quantity\": 2,\n      \"description\": \"Articulo 1\",\n      \"price\": 25,\n      \"dateAdded\": \"\"\n    },\n    {\n      \"quantity\": 5,\n      \"description\": \"Articulo 2\",\n      \"price\": 15,\n      \"dateAdded\": \"\"\n    }\n  ]\n}"},"auth":{"type":"bearer","bearer":[{"key":"token","value":"99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec","type":"string"}]}}},{"name":"Update Factura","request":{"method":"PUT","url":{"raw":"http://localhost:3000/invoice/bba12f45-f19c-4f63-a377-574f288dc5a9","protocol":"http","host":["localhost:3000"],"path":["invoice","bba12f45-f19c-4f63-a377-574f288dc5a9"],"port":"3000"},"body":{"mode":"raw","options":{"raw":{"language":"json"}},"raw":"{\n  \"customerId\": \"633a7e3f-kkk1-4ba3-b07c-456b5362c9d8\",\n  \"detail\": [\n    {\n      \"quantity\": 2,\n      \"description\": \"Articulo 1\",\n      \"price\": 25,\n      \"dateAdded\": \"\"\n    },\n    {\n      \"quantity\": 3,\n      \"description\": \"Articulo 2\",\n      \"price\": 15,\n      \"dateAdded\": \"\"\n    },\n    {\n      \"quantity\": 10,\n      \"description\": \"Articulo 3\",\n      \"price\": 5,\n      \"dateAdded\": \"\"\n    }\n  ]\n}"},"auth":{"type":"bearer","bearer":[{"key":"token","value":"99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec","type":"string"}]}}},{"name":"Modificar Factura","request":{"method":"PATCH","url":{"raw":"http://localhost:3000/invoice/d925782f-c9e4-4652-adc9-2e15fc54b74f","protocol":"http","host":["localhost:3000"],"path":["invoice","d925782f-c9e4-4652-adc9-2e15fc54b74f"],"port":"3000"},"body":{"mode":"raw","options":{"raw":{"language":"json"}},"raw":"{\n  \"customerId\": \"633a7e3f-jjj2-4ba3-b07c-456b5362c9d8\",\n  \"detail\": [\n    {\n      \"description\": \"Articulo 4\"\n    }\n  ]\n}"},"auth":{"type":"bearer","bearer":[{"key":"token","value":"99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec","type":"string"}]}}},{"name":"Borrar Factura","request":{"method":"DELETE","url":{"raw":"http://localhost:3000/invoice/010b779d-d8ee-4989-a04f-b902358ee379","protocol":"http","host":["localhost:3000"],"path":["invoice","010b779d-d8ee-4989-a04f-b902358ee379"],"port":"3000"},"auth":{"type":"bearer","bearer":[{"key":"token","value":"99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec","type":"string"}]}}}]}
+{
+	"info": {
+		"_postman_id": "8edb27a1-46ad-4ee4-b36e-0e65db31cf2a",
+		"name": "RetoFinalPath3NestJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24045630"
+	},
+	"item": [
+		{
+			"name": "Test Servidor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listado  Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Cliente por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customer/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cliente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\" : \"Juan\",\n  \"apellido\" : \"Alegre\",\n  \"telefono\" : \"123456789\",\n  \"email\" : \"juanal@mail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cliente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\" : \"Maria\",\n  \"apellido\" : \"Almeida\",\n  \"telefono\" : \"456789123\",\n  \"email\" : \"maral@mail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Cliente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\" : \"Maria\",\n  \"apellido\" : \"Almeida\",\n  \"telefono\" : \"456789123\",\n  \"email\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Cliente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customer/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listado Facturas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/invoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Factura por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/invoice/2772dd5b-5f85-4ce2-bc87-9af28f70cf25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoice",
+						"2772dd5b-5f85-4ce2-bc87-9af28f70cf25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Factura",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"customerId\": \"633a7e3f-eea5-4ba3-b07c-456b5362c9d8\",\n  \"detail\": [\n    {\n      \"quantity\": 2,\n      \"description\": \"Articulo 1\",\n      \"price\": 25,\n      \"dateAdded\": \"\"\n    },\n    {\n      \"quantity\": 5,\n      \"description\": \"Articulo 2\",\n      \"price\": 15,\n      \"dateAdded\": \"\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/invoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Factura",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"customerId\": \"633a7e3f-kkk1-4ba3-b07c-456b5362c9d8\",\n  \"detail\": [\n    {\n      \"quantity\": 2,\n      \"description\": \"Articulo 1\",\n      \"price\": 25,\n      \"dateAdded\": \"\"\n    },\n    {\n      \"quantity\": 3,\n      \"description\": \"Articulo 2\",\n      \"price\": 15,\n      \"dateAdded\": \"\"\n    },\n    {\n      \"quantity\": 10,\n      \"description\": \"Articulo 3\",\n      \"price\": 5,\n      \"dateAdded\": \"\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/invoice/bba12f45-f19c-4f63-a377-574f288dc5a9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoice",
+						"bba12f45-f19c-4f63-a377-574f288dc5a9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Factura",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"customerId\": \"633a7e3f-jjj2-4ba3-b07c-456b5362c9d8\",\n  \"detail\": [\n    {\n      \"description\": \"Articulo 4\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000:3000/invoice/d925782f-c9e4-4652-adc9-2e15fc54b74f",
+					"protocol": "http",
+					"host": [
+						"localhost:3000"
+					],
+					"port": "3000",
+					"path": [
+						"invoice",
+						"d925782f-c9e4-4652-adc9-2e15fc54b74f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Factura",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "99e4c497d8b4c049ce41e71ff04055adc01714bccdf2f901e4c1d16ffabcef571398fa2b416ddc1037a98c4040c2f277c1bbb2dbc647ed65a2acaf657ac229ec",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/invoice/010b779d-d8ee-4989-a04f-b902358ee379",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoice",
+						"010b779d-d8ee-4989-a04f-b902358ee379"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
