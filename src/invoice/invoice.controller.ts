@@ -29,7 +29,7 @@ export class InvoiceController {
   // creacion de nueva factura
   @Post()
   @UseGuards(AuthGuard)
-  @UsePipes(new ValidationPipe())
+  //@UsePipes(new ValidationPipe())
   create(@Body() newInvoice: CreateInvoiceDto) {
     return this.invoiceService.create(newInvoice);
   }

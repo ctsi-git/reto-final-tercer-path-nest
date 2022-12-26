@@ -40,15 +40,18 @@ export class InvoiceService {
       }
 
       createInvoice.detail = invoiceDetails;
+
       const newInvoice = {
         uuid: id,
         ...createInvoice,
         dateCreated: new Date(Date.now()).toISOString(),
         totalToPay: total,
+        dateUpdated: '',
       };
 
       this.invoices.push(newInvoice);
-      return this.formatResponse(newInvoice);
+
+      return this.formatResponse(this.findInvoiceByID(id)[0]);
     } catch (err) {
       throw new InternalServerErrorException('Error al crear nueva Factura!');
     }

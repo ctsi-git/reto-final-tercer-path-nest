@@ -6,7 +6,6 @@ export class InvoiceDetailDto {
   description: string;
   @IsInt()
   price: number;
-  @IsInt()
   toPay: number;
   dateAdded: string;
 }
