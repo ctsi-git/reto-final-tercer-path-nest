@@ -1,7 +1,7 @@
 # Reto final del tercer pathway de NestJS
 ### por Edinson Acosta Gancharov
 
-### Video Explicativo: ...
+### Video Explicativo: *https://youtu.be/nKTjkwcLYv4*
 <hr>
 
 ## Descripcion
